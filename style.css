@@ -1,0 +1,120 @@
+.nav-bar {
+    display: flex;
+    background-color: blue;
+}
+
+.nav-bar .div-1 {
+    display: flex;
+    flex: 1;
+    background-color: red;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-bar .div-1 h1 {
+    padding: 20px;
+}
+
+.nav-bar .div-1 button {
+    display: flex;
+    padding: 20px;
+    height: 20px;
+    align-items: center;
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.nav-bar .div-2 {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1.3;
+    background-color: green;
+}
+
+.nav-bar .div-2 ul {
+    display: flex;
+    padding: 20px;
+    gap : 60px;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: yellow;
+    height: 100vh;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.main-content .side-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    width: 200px;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.main-content .side-menu ul li {
+    display: flex;
+    align-items: center;
+}
+
+.main-content .side-menu.active {
+    width: 60px;
+    transition: all 0.5s ease;
+}
+
+.side-menu.active li a {
+    visibility: hidden;
+}
+
+.side-menu.active .menu-title {
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+.main-content .side-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-content .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    background-color: orange;
+    flex: 1;
+    height: 100%;
+}
+ 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 100px;
+    bottom: 0;
+}
